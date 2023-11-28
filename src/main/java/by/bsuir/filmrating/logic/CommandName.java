@@ -2,7 +2,7 @@ package by.bsuir.filmrating.logic;
 
 public enum CommandName {
     DO_LOGIN,
-    DO_REGISTER,
+    DO_REGISTRATION,
     ADD_FILM,
     EDIT_FILM,
     GET_FILM,

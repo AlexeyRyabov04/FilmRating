@@ -4,6 +4,7 @@ import by.bsuir.filmrating.logic.CommandException;
 import by.bsuir.filmrating.logic.CommandHelper;
 import by.bsuir.filmrating.logic.ICommand;
 
+import by.bsuir.filmrating.logic.impl.ChangeLanguageCommand;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -18,7 +19,7 @@ public class Controller extends HttpServlet {
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        executeCommand(request, response);
+        processRequest(request, response);
     }
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -59,10 +60,10 @@ public class Controller extends HttpServlet {
         if (dispatcher != null){
             dispatcher.forward(request, response);
         } else{
-            errorMessageDireclyFromresponse(response);
+            errorMessageDirectlyFromResponse(response);
         }
     }
-    private void errorMessageDireclyFromresponse(HttpServletResponse response) throws
+    private void errorMessageDirectlyFromResponse(HttpServletResponse response) throws
             IOException{
         response.setContentType("text/html");
         response.getWriter().println("E R R O R");
