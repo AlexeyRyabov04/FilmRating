@@ -3,9 +3,9 @@
 <c:set value='${requestScope["error"]}' var="error"/>
 <html>
 <head>
-    <title>Title</title>
+    <title>Error</title>
 </head>
 <body>
-
+<h1>${error}</h1>
 </body>
 </html>

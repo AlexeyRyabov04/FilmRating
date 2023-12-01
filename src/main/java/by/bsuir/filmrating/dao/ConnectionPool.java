@@ -19,7 +19,7 @@ public class ConnectionPool {
     }
 
     private ConnectionPool() {
-        ResourceBundle bundle = ResourceBundle.getBundle("db.name");
+        ResourceBundle bundle = ResourceBundle.getBundle("database");
         final String url = bundle.getString("db.url");
         final String user = bundle.getString("db.user");
         final String password = bundle.getString("db.password");

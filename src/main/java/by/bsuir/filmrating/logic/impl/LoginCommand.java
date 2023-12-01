@@ -12,14 +12,14 @@ public class LoginCommand implements ICommand {
     private final AuthDao authDao = new JDBCAuthDao();
     @Override
     public String execute(HttpServletRequest request) throws CommandException {
-        String email = request.getParameter("email");
+        String name = request.getParameter("name");
         String password = request.getParameter("password");
         if (password.length() < 4) {
             request.setAttribute("error", "Password should be at least 4 characters");
             return JspPageName.LOGIN_PAGE;
         }
         try {
-            User user = authDao.getUser(email, password);
+            User user = authDao.getUser(name, password);
             if (user.getIsBanned()) {
                 throw new RuntimeException("Sorry, your account has been banned");
             }

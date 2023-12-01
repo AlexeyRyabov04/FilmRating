@@ -13,13 +13,19 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 public class Controller extends HttpServlet {
     private static final long serialVersionUID = 1L;
+    private static final String JSP_PATH = "/WEB-INF/jsp/%s";
 
     public Controller() {
         super();
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        String page = request.getParameter("page");
+        if (page != null) {
+            request.getRequestDispatcher(String.format(JSP_PATH, page)).forward(request, response);
+        } else {
+            processRequest(request, response);
+        }
     }
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -45,23 +51,7 @@ public class Controller extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String commandName =
-                request.getParameter(RequestParameterName.COMMAND_NAME);
-        ICommand command = CommandHelper.getInstance().getCommand(commandName);
-        String page = null;
-        try {
-            page = command.execute(request);
-        } catch (CommandException e) {
-            page = JspPageName.ERROR_PAGE;
-        } catch (Exception e){
-            page = JspPageName.ERROR_PAGE;
-        }
-        RequestDispatcher dispatcher = request.getRequestDispatcher(page);
-        if (dispatcher != null){
-            dispatcher.forward(request, response);
-        } else{
-            errorMessageDirectlyFromResponse(response);
-        }
+        processRequest(request, response);
     }
     private void errorMessageDirectlyFromResponse(HttpServletResponse response) throws
             IOException{

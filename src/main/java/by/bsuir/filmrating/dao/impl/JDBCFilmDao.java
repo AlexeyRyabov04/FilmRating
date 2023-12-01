@@ -114,11 +114,15 @@ public class JDBCFilmDao implements FilmDao {
             while (reviewResult.next()) {
                 final int reviewId = reviewResult.getInt("r_id");
                 final int authorId = reviewResult.getInt("u_id");
-                final String reviewComment = reviewResult.getString("r_comment");
-                final int reviewRating = reviewResult.getInt("r_rating");
-                Review review = new Review(reviewId, authorId, reviewRating, reviewComment);
+                final String authorName = reviewResult.getString("u_name");
+                final int userRating = reviewResult.getInt("u_rating");
+                final String reviewText = reviewResult.getString("r_comment");
+                final double reviewRating = reviewResult.getDouble("r_rating");
+
+                Review review = new Review(reviewId, authorId, authorName, userRating, reviewText, reviewRating);
+
                 if (authorId == userId) {
-                    currentUserReview = new Review(reviewId, authorId, reviewRating, reviewComment);
+                    currentUserReview = new Review(reviewId, authorId, authorName, userRating, reviewText, reviewRating);
                 } else {
                     reviews.add(review);
                 }
@@ -173,7 +177,7 @@ public class JDBCFilmDao implements FilmDao {
                 int filmId = filmIdResult.getInt("f_id");
 
                 PreparedStatement reviewInsertStatement = connection.prepareStatement(
-                        "INSERT INTO reviews (r_user_id, r_film_id, r_comment, r_rating) VALUES (?, ?, ?, ?)"
+                        "INSERT INTO reviews (r_author_id, r_film_id, r_comment, r_rating) VALUES (?, ?, ?, ?)"
                 );
                 reviewInsertStatement.setInt(1, userId);
                 reviewInsertStatement.setInt(2, filmId);

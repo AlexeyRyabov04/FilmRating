@@ -9,48 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a9641e2-0197-4bff-987e-9e0806973829" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/ConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/impl/JDBCAuthDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/impl/JDBCFilmDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/impl/JDBCUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/interfaces/AuthDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/interfaces/FilmDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/interfaces/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dto/Film.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dto/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dto/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/filters/ChangeLanguageFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/CommandHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/AddFilmCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/AddReviewCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/ChangeLanguageCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/DeleteReviewCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/EditFilmCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/EditUserCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/GetFilmCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/GetFilmsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/GetReviewsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/GetUsersCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/LoginCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/LogoutCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/NoSuchCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/RegistrationCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_ru.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/filminfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/films.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registration.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
+    <list default="true" id="3a9641e2-0197-4bff-987e-9e0806973829" name="Changes" comment="a">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/controller/JspPageName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/controller/JspPageName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/CommandName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/CommandName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/ConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/impl/JDBCFilmDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/impl/JDBCFilmDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dto/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dto/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/RegistrationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/logic/impl/RegistrationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_ru.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/filminfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/filmInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/films.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/films.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +44,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -92,15 +73,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/ВТ 2 часть/2Лаба/WT Lab2/FilmRating",
+    "last_opened_file_path": "D:/ВТ 2 часть/2Лаба/WT Lab2/FilmRating/src/main/resources",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -109,6 +91,14 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ВТ 2 часть\2Лаба\WT Lab2\FilmRating\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ВТ 2 часть\2Лаба\WT Lab2\FilmRating\src\main\webapp" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="excludedTypes">
       <set>
@@ -117,18 +107,46 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Tomcat 8.5.96" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.96" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
+    <configuration name="FilmRating" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/controller?page=login.jsp" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="FilmRating:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/FilmRating_war_exploded" />
+            <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="bad82621-7474-47c5-82a6-229bfa68eda4" />
+        <option name="BASE_DIRECTORY_NAME" value="2011b65a-2925-4471-b10f-1076766cdc2b" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -136,7 +154,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="64065" />
+        <option name="DEBUG_PORT" value="50861" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -201,23 +219,14 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="FilmRating:war" />
           <artifact name="FilmRating:war exploded" />
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Maven.FilmRating" />
+      <item itemvalue="Tomcat Server.Tomcat" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -231,11 +240,44 @@
       <workItem from="1701011758956" duration="3176000" />
       <workItem from="1701175672754" duration="7990000" />
       <workItem from="1701193122498" duration="5242000" />
-      <workItem from="1701198473184" duration="419000" />
+      <workItem from="1701198473184" duration="2264000" />
+      <workItem from="1701355456878" duration="3397000" />
+      <workItem from="1701358875613" duration="1079000" />
+      <workItem from="1701361065215" duration="3517000" />
+      <workItem from="1701409040530" duration="6596000" />
     </task>
+    <task id="LOCAL-00001" summary="a">
+      <option name="closed" value="true" />
+      <created>1701199153647</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701199153647</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/by/bsuir/filmrating/dao/impl/JDBCAuthDao.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin.jsp</url>
+          <line>31</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

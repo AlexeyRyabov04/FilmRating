@@ -40,6 +40,7 @@ public class RegistrationCommand implements ICommand {
     }
     public static String hashPassword(String password) {
         String salt = BCrypt.gensalt(12);
-        return BCrypt.hashpw(password, salt);
+        String pass = BCrypt.hashpw(password, salt);
+        return pass;
     }
 }
